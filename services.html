@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Optimization -->
+    <title>Zephyro Web Studio | Premium Creative Agency</title>
+    <meta name="description" content="Crafting modern, high-performance, and immersive digital experiences. Zephyro Web Studio designs and develops state-of-the-art web products for forward-thinking brands." />
+    <meta name="keywords" content="web agency, creative studio, web design, digital experiences, premium development, GSAP animations, minimal design, black and white portfolio" />
+    <meta name="author" content="Zephyro Web Studio" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Zephyro Web Studio | Premium Creative Agency" />
+    <meta property="og:description" content="Crafting modern, high-performance, and immersive digital experiences. Zephyro Web Studio designs and develops state-of-the-art web products for forward-thinking brands." />
+    <meta property="og:type" content="website" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body data-barba="wrapper">
+    <!-- Premium Noise Overlay for Cinematic Texture -->
+    <div class="noise-overlay" id="noise-overlay"></div>
+    
+    <!-- Dynamic HTML5 Circuit Canvas Background -->
+    <canvas id="circuit-canvas" class="circuit-canvas"></canvas>
+    
+    <!-- Luxury Page Transition Overlay Screen -->
+    <div class="page-transition-overlay" id="transition-overlay"></div>
+    
+    <!-- Luxury Initial Page Preloader -->
+    <div class="page-loader" id="page-loader">
+      <div class="loader-content">
+        <div class="loader-logo-wrapper">
+          <svg class="loader-svg-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="circuit-path-loader" d="M20 20 H80 L50 50 L80 80 H20 L50 50 Z" stroke="white" stroke-width="1.5" stroke-dasharray="300" stroke-dashoffset="300" />
+            <path class="logo-z-solid" d="M25 25 H75 L25 75 H75" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.1;" />
+          </svg>
+        </div>
+        <div class="loader-text-wrapper">
+          <div class="loader-title">ZEPHYRO</div>
+          <div class="loader-subtitle">WEB STUDIO</div>
+        </div>
+        <div class="loader-bar-container">
+          <div class="loader-bar" id="loader-bar"></div>
+        </div>
+      </div>
+      <div class="loader-panels">
+        <div class="panel-left"></div>
+        <div class="panel-right"></div>
+      </div>
+    </div>
+    
+    <!-- Modern Sticky Navigation Bar -->
+    <header class="site-header" id="site-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <a href="/" class="logo-link" id="nav-logo" aria-label="Zephyro Home">
+          <div class="logo-icon-container">
+            <svg class="site-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Animated digital circuit lines -->
+              <path class="circuit-path path-1" d="M 25 25 H 75" stroke="currentColor" stroke-width="2" stroke-dasharray="100 100" />
+              <path class="circuit-path path-2" d="M 75 25 L 25 75" stroke="currentColor" stroke-width="2" stroke-dasharray="100 100" />
+              <path class="circuit-path path-3" d="M 25 75 H 75" stroke="currentColor" stroke-width="2" stroke-dasharray="100 100" />
+              <!-- Core stylized structural elements -->
+              <path class="z-line-1" d="M 25 25 H 75" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+              <path class="z-line-2" d="M 75 25 L 25 75" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+              <path class="z-line-3" d="M 25 75 H 75" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+              <!-- Circuit terminal dots -->
+              <circle cx="25" cy="25" r="3" fill="currentColor" />
+              <circle cx="75" cy="25" r="3" fill="currentColor" />
+              <circle cx="25" cy="75" r="3" fill="currentColor" />
+              <circle cx="75" cy="75" r="3" fill="currentColor" />
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">ZEPHYRO</span>
+            <span class="logo-tag">WEB STUDIO</span>
+          </div>
+        </a>
+        
+        <!-- Navigation Links -->
+        <nav class="main-nav" id="main-nav">
+          <ul class="nav-list">
+            <li><a href="/" class="nav-item">Home</a></li>
+            <li><a href="/about.html" class="nav-item">About</a></li>
+            <li><a href="/services.html" class="nav-item active">Services</a></li>
+            <li><a href="/projects.html" class="nav-item">Projects</a></li>
+            <li><a href="/process.html" class="nav-item">Process</a></li>
+            <li><a href="/pricing.html" class="nav-item">Pricing</a></li>
+            <li><a href="/contact.html" class="nav-item">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <!-- CTA Magnetic Button -->
+        <div class="nav-cta-wrapper">
+          <a href="/contact.html" class="magnetic-button" id="header-cta" data-strength="20">
+            <span class="btn-text">Let's Create</span>
+            <span class="btn-icon"><i data-lucide="arrow-up-right"></i></span>
+          </a>
+        </div>
+        
+        <!-- Mobile Menu Trigger -->
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </header>
+    
+    <!-- Full-screen Mobile Navigation Drawer -->
+    <div class="mobile-menu-drawer" id="mobile-drawer">
+      <div class="drawer-bg"></div>
+      <div class="drawer-content">
+        <ul class="mobile-nav-list">
+          <li><a href="/" class="mobile-nav-item">Home</a></li>
+          <li><a href="/about.html" class="mobile-nav-item">About</a></li>
+          <li><a href="/services.html" class="mobile-nav-item active">Services</a></li>
+          <li><a href="/projects.html" class="mobile-nav-item">Projects</a></li>
+          <li><a href="/process.html" class="mobile-nav-item">Process</a></li>
+          <li><a href="/pricing.html" class="mobile-nav-item">Pricing</a></li>
+          <li><a href="/contact.html" class="mobile-nav-item">Contact</a></li>
+        </ul>
+        <div class="drawer-footer">
+          <p class="drawer-desc">Zephyro Web Studio — Crafting digital excellence.</p>
+          <a href="mailto:hello@zephyro.studio" class="drawer-email">hello@zephyro.studio</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Shell Container for dynamic pages (Footer rendered globally inside main wrapper) -->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main class="page-container" id="app" data-barba="container" data-barba-namespace="services">
+          
+    <section class="section-panel app-section" id="services-page">
+      <div class="home-services" style="margin-top: 0;">
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+          <span class="body-mono">OUR SERVICES • CAPABILITIES</span>
+          <h2 class="heading-medium animate-reveal-services">ENGINEERING HIGH-CONVERSION DIGITAL SYSTEMS</h2>
+        </div>
+        
+        <!-- 6 services cards grid -->
+        <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+          
+          <!-- Card 1: Website Development -->
+          <div class="service-card" data-tilt>
+            <span class="service-num">01 / ENG</span>
+            <div class="service-icon"><i data-lucide="code-xml"></i></div>
+            <h3 class="heading-small">Website Development</h3>
+            <p class="body-regular">Custom modern websites built for speed, responsiveness, and conversion. We write clean, optimized codesets from scratch.</p>
+          </div>
+          
+          <!-- Card 2: SEO Optimization -->
+          <div class="service-card" data-tilt>
+            <span class="service-num">02 / SEO</span>
+            <div class="service-icon"><i data-lucide="search-code"></i></div>
+            <h3 class="heading-small">SEO Optimization</h3>
+            <p class="body-regular">Technical and local SEO strategies that improve visibility, crawlability, search rankings, and organic inbound growth.</p>
+          </div>
+          
+          <!-- Card 3: Landing Pages -->
+          <div class="service-card" data-tilt>
+            <span class="service-num">03 / CONV</span>
+            <div class="service-icon"><i data-lucide="target"></i></div>
+            <h3 class="heading-small">Landing Pages</h3>
+            <p class="body-regular">High-converting landing pages designed to generate leads and sales, structured with high-retention visual staggers.</p>
+          </div>
+          
+          <!-- Card 4: Logo Design -->
+          <div class="service-card" data-tilt>
+            <span class="service-num">04 / BRAND</span>
+            <div class="service-icon"><i data-lucide="sparkles"></i></div>
+            <h3 class="heading-small">Logo Design</h3>
+            <p class="body-regular">Modern brand identity and structural logo systems tailored for businesses looking to project premium market authority.</p>
+          </div>
+          
+          <!-- Card 5: Visiting Card Design -->
+          <div class="service-card" data-tilt>
+            <span class="service-num">05 / PRINT</span>
+            <div class="service-icon"><i data-lucide="contact-2"></i></div>
+            <h3 class="heading-small">Visiting Card Design</h3>
+            <p class="body-regular">Premium business cards and print-ready branding materials designed to establish high-fashion offline credentials.</p>
+          </div>
+          
+          <!-- Card 6: Website Revamps -->
+          <div class="service-card" data-tilt>
+            <span class="service-num">06 / TRANS</span>
+            <div class="service-icon"><i data-lucide="refresh-cw"></i></div>
+            <h3 class="heading-small">Website Revamps</h3>
+            <p class="body-regular">Transform outdated legacy websites into modern, sleek, conversion-focused experiences built to win premium conversions.</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  
+        </main>
+        
+        <!-- Global Brand Footer -->
+        <div id="global-footer"></div>
+      </div>
+    </div>
+    
+    <!-- Main Application Script -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Optimization -->
+    <title>Zephyro Web Studio | Premium Creative Agency</title>
+    <meta name="description" content="Crafting modern, high-performance, and immersive digital experiences. Zephyro Web Studio designs and develops state-of-the-art web products for forward-thinking brands." />
+    <meta name="keywords" content="web agency, creative studio, web design, digital experiences, premium development, GSAP animations, minimal design, black and white portfolio" />
+    <meta name="author" content="Zephyro Web Studio" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Zephyro Web Studio | Premium Creative Agency" />
+    <meta property="og:description" content="Crafting modern, high-performance, and immersive digital experiences. Zephyro Web Studio designs and develops state-of-the-art web products for forward-thinking brands." />
+    <meta property="og:type" content="website" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body data-barba="wrapper">
+    <!-- Premium Noise Overlay for Cinematic Texture -->
+    <div class="noise-overlay" id="noise-overlay"></div>
+    
+    <!-- Dynamic HTML5 Circuit Canvas Background -->
+    <canvas id="circuit-canvas" class="circuit-canvas"></canvas>
+    
+    <!-- Luxury Page Transition Overlay Screen -->
+    <div class="page-transition-overlay" id="transition-overlay"></div>
+    
+    <!-- Luxury Initial Page Preloader -->
+    <div class="page-loader" id="page-loader">
+      <div class="loader-content">
+        <div class="loader-logo-wrapper">
+          <svg class="loader-svg-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="circuit-path-loader" d="M20 20 H80 L50 50 L80 80 H20 L50 50 Z" stroke="white" stroke-width="1.5" stroke-dasharray="300" stroke-dashoffset="300" />
+            <path class="logo-z-solid" d="M25 25 H75 L25 75 H75" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.1;" />
+          </svg>
+        </div>
+        <div class="loader-text-wrapper">
+          <div class="loader-title">ZEPHYRO</div>
+          <div class="loader-subtitle">WEB STUDIO</div>
+        </div>
+        <div class="loader-bar-container">
+          <div class="loader-bar" id="loader-bar"></div>
+        </div>
+      </div>
+      <div class="loader-panels">
+        <div class="panel-left"></div>
+        <div class="panel-right"></div>
+      </div>
+    </div>
+    
+    <!-- Modern Sticky Navigation Bar -->
+    <header class="site-header" id="site-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <a href="/" class="logo-link" id="nav-logo" aria-label="Zephyro Home">
+          <div class="logo-icon-container">
+            <svg class="site-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Animated digital circuit lines -->
+              <path class="circuit-path path-1" d="M 25 25 H 75" stroke="currentColor" stroke-width="2" stroke-dasharray="100 100" />
+              <path class="circuit-path path-2" d="M 75 25 L 25 75" stroke="currentColor" stroke-width="2" stroke-dasharray="100 100" />
+              <path class="circuit-path path-3" d="M 25 75 H 75" stroke="currentColor" stroke-width="2" stroke-dasharray="100 100" />
+              <!-- Core stylized structural elements -->
+              <path class="z-line-1" d="M 25 25 H 75" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+              <path class="z-line-2" d="M 75 25 L 25 75" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+              <path class="z-line-3" d="M 25 75 H 75" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+              <!-- Circuit terminal dots -->
+              <circle cx="25" cy="25" r="3" fill="currentColor" />
+              <circle cx="75" cy="25" r="3" fill="currentColor" />
+              <circle cx="25" cy="75" r="3" fill="currentColor" />
+              <circle cx="75" cy="75" r="3" fill="currentColor" />
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">ZEPHYRO</span>
+            <span class="logo-tag">WEB STUDIO</span>
+          </div>
+        </a>
+        
+        <!-- Navigation Links -->
+        <nav class="main-nav" id="main-nav">
+          <ul class="nav-list">
+            <li><a href="/" class="nav-item">Home</a></li>
+            <li><a href="/about.html" class="nav-item">About</a></li>
+            <li><a href="/services.html" class="nav-item">Services</a></li>
+            <li><a href="/projects.html" class="nav-item">Projects</a></li>
+            <li><a href="/process.html" class="nav-item">Process</a></li>
+            <li><a href="/pricing.html" class="nav-item active">Pricing</a></li>
+            <li><a href="/contact.html" class="nav-item">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <!-- CTA Magnetic Button -->
+        <div class="nav-cta-wrapper">
+          <a href="/contact.html" class="magnetic-button" id="header-cta" data-strength="20">
+            <span class="btn-text">Let's Create</span>
+            <span class="btn-icon"><i data-lucide="arrow-up-right"></i></span>
+          </a>
+        </div>
+        
+        <!-- Mobile Menu Trigger -->
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </header>
+    
+    <!-- Full-screen Mobile Navigation Drawer -->
+    <div class="mobile-menu-drawer" id="mobile-drawer">
+      <div class="drawer-bg"></div>
+      <div class="drawer-content">
+        <ul class="mobile-nav-list">
+          <li><a href="/" class="mobile-nav-item">Home</a></li>
+          <li><a href="/about.html" class="mobile-nav-item">About</a></li>
+          <li><a href="/services.html" class="mobile-nav-item">Services</a></li>
+          <li><a href="/projects.html" class="mobile-nav-item">Projects</a></li>
+          <li><a href="/process.html" class="mobile-nav-item">Process</a></li>
+          <li><a href="/pricing.html" class="mobile-nav-item active">Pricing</a></li>
+          <li><a href="/contact.html" class="mobile-nav-item">Contact</a></li>
+        </ul>
+        <div class="drawer-footer">
+          <p class="drawer-desc">Zephyro Web Studio — Crafting digital excellence.</p>
+          <a href="mailto:hello@zephyro.studio" class="drawer-email">hello@zephyro.studio</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Shell Container for dynamic pages (Footer rendered globally inside main wrapper) -->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main class="page-container" id="app" data-barba="container" data-barba-namespace="pricing">
+          
+    <section class="section-panel app-section" id="pricing-page">
+      <div class="pricing-header" style="max-width: 1200px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 20px;">
+        <span class="body-mono">PRICING • INVESTMENT MODEL</span>
+        <h1 class="heading-medium animate-reveal-pricing-h">CHOOSE THE PERFECT PLAN</h1>
+        <p class="body-large" style="max-width: 700px; margin: 0 auto;">Modern web solutions tailored for businesses that want to grow online. Transparent pricing with zero hidden layers.</p>
+      </div>
+      
+      <!-- Starter, Business, and Premium Plan Grid -->
+      <div class="pricing-grid" style="max-width: 1200px; margin: 60px auto 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+        
+        <!-- Plan 1: Starter -->
+        <div class="price-card info-glass-card" style="display: flex; flex-direction: column; gap: 30px; padding: 50px 40px; background: rgba(13, 13, 13, 0.45); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid var(--border-color); box-shadow: 0 8px 32px rgba(0,0,0,0.4); position: relative; transition: var(--transition-smooth);">
+          <div>
+            <span class="body-mono">PLAN 01 / STARTER</span>
+            <h3 class="heading-small" style="margin-top: 10px; font-size: 24px;">Starter</h3>
+          </div>
+          
+          <div class="price-box" style="display: flex; align-items: flex-end; gap: 8px;">
+            <span class="price-num" style="font-family: var(--font-display); font-size: 50px; font-weight: 800; line-height: 1;">₹5,999</span>
+          </div>
+          
+          <p class="body-regular" style="color: var(--text-secondary);">Perfect for startups and small businesses looking for a strong online presence.</p>
+          
+          <ul class="pricing-features" style="list-style: none; display: flex; flex-direction: column; gap: 15px; border-top: 1px solid var(--border-color); padding-top: 25px;">
+            <li><i data-lucide="check"></i> Up to 3 Pages</li>
+            <li><i data-lucide="check"></i> Fully Responsive Design</li>
+            <li><i data-lucide="check"></i> Social Media Integration</li>
+            <li><i data-lucide="check"></i> Free Hosting for 1 Year</li>
+            <li><i data-lucide="check"></i> 3 Revisions</li>
+            <li><i data-lucide="check"></i> Domain Setup Assistance</li>
+            <li><i data-lucide="check"></i> Google Maps Integration</li>
+            <li><i data-lucide="check"></i> Contact Form</li>
+            <li><i data-lucide="check"></i> Basic Performance Optimization</li>
+          </ul>
+          
+          <a href="/contact.html" class="magnetic-button price-btn" data-strength="15" style="margin-top: auto; text-align: center; display: block;">
+            <span class="btn-text">Get Started</span>
+          </a>
+        </div>
+        
+        <!-- Plan 2: Business (Featured) -->
+        <div class="price-card featured info-glass-card" style="display: flex; flex-direction: column; gap: 30px; padding: 50px 40px; background: rgba(13, 13, 13, 0.45); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1.5px solid white; box-shadow: 0 12px 45px rgba(255,255,255,0.05); position: relative; transition: var(--transition-smooth);">
+          <div class="featured-tag" style="position: absolute; top: 20px; right: 20px; font-family: var(--font-mono); font-size: 9px; padding: 4px 8px; background-color: white; color: black; font-weight: 700;">MOST POPULAR</div>
+          <div>
+            <span class="body-mono" style="color: var(--text-primary);">PLAN 02 / ENTERPRISE</span>
+            <h3 class="heading-small" style="margin-top: 10px; font-size: 24px;">Business</h3>
+          </div>
+          
+          <div class="price-box" style="display: flex; align-items: flex-end; gap: 8px;">
+            <span class="price-num" style="font-family: var(--font-display); font-size: 50px; font-weight: 800; line-height: 1;">₹11,999</span>
+          </div>
+          
+          <p class="body-regular" style="color: var(--text-secondary);">Designed for growing businesses that need a modern conversion-focused website.</p>
+          
+          <ul class="pricing-features" style="list-style: none; display: flex; flex-direction: column; gap: 15px; border-top: 1px solid var(--border-color); padding-top: 25px;">
+            <li><i data-lucide="check"></i> Up to 5 Pages</li>
+            <li><i data-lucide="check"></i> <strong>Everything in Starter Plan</strong></li>
+            <li><i data-lucide="check"></i> Custom UI Sections</li>
+            <li><i data-lucide="check"></i> SEO Ready Structure</li>
+            <li><i data-lucide="check"></i> Advanced Contact Forms</li>
+            <li><i data-lucide="check"></i> Speed Optimization</li>
+            <li><i data-lucide="check"></i> Free Hosting for 1 Year</li>
+            <li><i data-lucide="check"></i> 5 Revisions</li>
+            <li><i data-lucide="check"></i> Basic SEO Setup</li>
+            <li><i data-lucide="check"></i> WhatsApp Integration</li>
+          </ul>
+          
+          <a href="/contact.html" class="magnetic-button price-btn" data-strength="15" style="margin-top: auto; text-align: center; display: block; background-color: white; color: black; border-color: white;">
+            <span class="btn-text">Choose Business</span>
+          </a>
+        </div>
+        
+        <!-- Plan 3: Premium -->
+        <div class="price-card info-glass-card" style="display: flex; flex-direction: column; gap: 30px; padding: 50px 40px; background: rgba(13, 13, 13, 0.45); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid var(--border-color); box-shadow: 0 8px 32px rgba(0,0,0,0.4); position: relative; transition: var(--transition-smooth);">
+          <div class="featured-tag" style="position: absolute; top: 20px; right: 20px; font-family: var(--font-mono); font-size: 9px; padding: 4px 8px; border: 1px solid rgba(255,255,255,0.3); background-color: transparent; color: white; font-weight: 700;">PREMIUM EXPERIENCE</div>
+          <div>
+            <span class="body-mono">PLAN 03 / CUSTOM</span>
+            <h3 class="heading-small" style="margin-top: 10px; font-size: 24px;">Premium</h3>
+          </div>
+          
+          <div class="price-box" style="display: flex; align-items: flex-end; gap: 8px;">
+            <span class="price-num" style="font-family: var(--font-display); font-size: 50px; font-weight: 800; line-height: 1;">₹29,999</span>
+          </div>
+          
+          <p class="body-regular" style="color: var(--text-secondary);">A fully custom premium web experience built for scaling businesses and brands.</p>
+          
+          <ul class="pricing-features" style="list-style: none; display: flex; flex-direction: column; gap: 15px; border-top: 1px solid var(--border-color); padding-top: 25px;">
+            <li><i data-lucide="check"></i> Up to 10 Pages</li>
+            <li><i data-lucide="check"></i> <strong>Everything in Business Plan</strong></li>
+            <li><i data-lucide="check"></i> Premium Custom UI/UX</li>
+            <li><i data-lucide="check"></i> Fully Custom Design System</li>
+            <li><i data-lucide="check"></i> Advanced SEO Optimization</li>
+            <li><i data-lucide="check"></i> Conversion-Focused Layouts</li>
+            <li><i data-lucide="check"></i> WhatsApp Chat Integration</li>
+            <li><i data-lucide="check"></i> Premium Animations</li>
+            <li><i data-lucide="check"></i> Priority Support</li>
+            <li><i data-lucide="check"></i> Free Hosting for 1 Year</li>
+            <li><i data-lucide="check"></i> 10 Revisions</li>
+          </ul>
+          
+          <a href="/contact.html" class="magnetic-button price-btn" data-strength="15" style="margin-top: auto; text-align: center; display: block;">
+            <span class="btn-text">Book a Consultation</span>
+          </a>
+        </div>
+        
+      </div>
+      
+      <!-- BOTTOM PREMIUM DETAILS SECTION -->
+      <div class="pricing-bottom-section" style="max-width: 900px; margin: 100px auto 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 40px; border-top: 1px solid var(--border-color); padding-top: 60px;">
+        <!-- Glowing CTA Solution -->
+        <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+          <h4 class="heading-small" style="font-size: 18px;">Need something custom?</h4>
+          <p class="body-regular" style="max-width: 600px; color: var(--text-secondary);">Contact us for a personalized solution tailored to your business goals. We engineer specific portals, database systems, and custom applications.</p>
+          <a href="/contact.html" class="magnetic-button glowing-button " data-strength="18" style="box-shadow: 0 0 20px rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.4); margin-top: 10px;">
+            <span class="btn-text">Contact Zephyro</span>
+            <span class="btn-icon"><i data-lucide="arrow-right"></i></span>
+          </a>
+        </div>
+        
+        <!-- Premium Tagline Statement -->
+        <div style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 30px; max-width: 800px;">
+          <p class="body-large" style="font-family: var(--font-display); font-weight: 500; font-size: 20px; line-height: 1.5; color: var(--text-primary);">
+            “Every website we build is custom-crafted for performance, aesthetics, and long-term scalability. No generic templates. No bloated designs.”
+          </p>
+        </div>
+        
+        <!-- Small disclaimer text -->
+        <p class="body-mono" style="font-size: 9px; color: var(--text-muted); letter-spacing: 1px; margin-top: -10px;">
+          * Maintenance & support packages are available separately.
+        </p>
+      </div>
+    </section>
+  
+        </main>
+        
+        <!-- Global Brand Footer -->
+        <div id="global-footer"></div>
+      </div>
+    </div>
+    
+    <!-- Main Application Script -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

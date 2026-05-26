@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Optimization -->
+    <title>Zephyro Web Studio | Premium Creative Agency</title>
+    <meta name="description" content="Crafting modern, high-performance, and immersive digital experiences. Zephyro Web Studio designs and develops state-of-the-art web products for forward-thinking brands." />
+    <meta name="keywords" content="web agency, creative studio, web design, digital experiences, premium development, GSAP animations, minimal design, black and white portfolio" />
+    <meta name="author" content="Zephyro Web Studio" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Zephyro Web Studio | Premium Creative Agency" />
+    <meta property="og:description" content="Crafting modern, high-performance, and immersive digital experiences. Zephyro Web Studio designs and develops state-of-the-art web products for forward-thinking brands." />
+    <meta property="og:type" content="website" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body data-barba="wrapper">
+    <!-- Premium Noise Overlay for Cinematic Texture -->
+    <div class="noise-overlay" id="noise-overlay"></div>
+    
+    <!-- Dynamic HTML5 Circuit Canvas Background -->
+    <canvas id="circuit-canvas" class="circuit-canvas"></canvas>
+    
+    <!-- Luxury Page Transition Overlay Screen -->
+    <div class="page-transition-overlay" id="transition-overlay"></div>
+    
+    <!-- Luxury Initial Page Preloader -->
+    <div class="page-loader" id="page-loader">
+      <div class="loader-content">
+        <div class="loader-logo-wrapper">
+          <svg class="loader-svg-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="circuit-path-loader" d="M20 20 H80 L50 50 L80 80 H20 L50 50 Z" stroke="white" stroke-width="1.5" stroke-dasharray="300" stroke-dashoffset="300" />
+            <path class="logo-z-solid" d="M25 25 H75 L25 75 H75" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.1;" />
+          </svg>
+        </div>
+        <div class="loader-text-wrapper">
+          <div class="loader-title">ZEPHYRO</div>
+          <div class="loader-subtitle">WEB STUDIO</div>
+        </div>
+        <div class="loader-bar-container">
+          <div class="loader-bar" id="loader-bar"></div>
+        </div>
+      </div>
+      <div class="loader-panels">
+        <div class="panel-left"></div>
+        <div class="panel-right"></div>
+      </div>
+    </div>
+    
+    <!-- Modern Sticky Navigation Bar -->
+    <header class="site-header" id="site-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <a href="/" class="logo-link" id="nav-logo" aria-label="Zephyro Home">
+          <div class="logo-icon-container">
+            <svg class="site-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Animated digital circuit lines -->
+              <path class="circuit-path path-1" d="M 25 25 H 75" stroke="currentColor" stroke-width="2" stroke-dasharray="100 100" />
+              <path class="circuit-path path-2" d="M 75 25 L 25 75" stroke="currentColor" stroke-width="2" stroke-dasharray="100 100" />
+              <path class="circuit-path path-3" d="M 25 75 H 75" stroke="currentColor" stroke-width="2" stroke-dasharray="100 100" />
+              <!-- Core stylized structural elements -->
+              <path class="z-line-1" d="M 25 25 H 75" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+              <path class="z-line-2" d="M 75 25 L 25 75" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+              <path class="z-line-3" d="M 25 75 H 75" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+              <!-- Circuit terminal dots -->
+              <circle cx="25" cy="25" r="3" fill="currentColor" />
+              <circle cx="75" cy="25" r="3" fill="currentColor" />
+              <circle cx="25" cy="75" r="3" fill="currentColor" />
+              <circle cx="75" cy="75" r="3" fill="currentColor" />
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">ZEPHYRO</span>
+            <span class="logo-tag">WEB STUDIO</span>
+          </div>
+        </a>
+        
+        <!-- Navigation Links -->
+        <nav class="main-nav" id="main-nav">
+          <ul class="nav-list">
+            <li><a href="/" class="nav-item">Home</a></li>
+            <li><a href="/about.html" class="nav-item">About</a></li>
+            <li><a href="/services.html" class="nav-item">Services</a></li>
+            <li><a href="/projects.html" class="nav-item">Projects</a></li>
+            <li><a href="/process.html" class="nav-item">Process</a></li>
+            <li><a href="/pricing.html" class="nav-item">Pricing</a></li>
+            <li><a href="/contact.html" class="nav-item active">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <!-- CTA Magnetic Button -->
+        <div class="nav-cta-wrapper">
+          <a href="/contact.html" class="magnetic-button" id="header-cta" data-strength="20">
+            <span class="btn-text">Let's Create</span>
+            <span class="btn-icon"><i data-lucide="arrow-up-right"></i></span>
+          </a>
+        </div>
+        
+        <!-- Mobile Menu Trigger -->
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </header>
+    
+    <!-- Full-screen Mobile Navigation Drawer -->
+    <div class="mobile-menu-drawer" id="mobile-drawer">
+      <div class="drawer-bg"></div>
+      <div class="drawer-content">
+        <ul class="mobile-nav-list">
+          <li><a href="/" class="mobile-nav-item">Home</a></li>
+          <li><a href="/about.html" class="mobile-nav-item">About</a></li>
+          <li><a href="/services.html" class="mobile-nav-item">Services</a></li>
+          <li><a href="/projects.html" class="mobile-nav-item">Projects</a></li>
+          <li><a href="/process.html" class="mobile-nav-item">Process</a></li>
+          <li><a href="/pricing.html" class="mobile-nav-item">Pricing</a></li>
+          <li><a href="/contact.html" class="mobile-nav-item active">Contact</a></li>
+        </ul>
+        <div class="drawer-footer">
+          <p class="drawer-desc">Zephyro Web Studio — Crafting digital excellence.</p>
+          <a href="mailto:hello@zephyro.studio" class="drawer-email">hello@zephyro.studio</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Shell Container for dynamic pages (Footer rendered globally inside main wrapper) -->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main class="page-container" id="app" data-barba="container" data-barba-namespace="contact">
+          
+    <section class="section-panel app-section" id="contact-page">
+      <div class="contact-grid" style="align-items: flex-start;">
+        
+        <!-- Left Column: Contact Form with Web3Forms Integration -->
+        <div class="contact-form-wrap">
+          <div style="display: flex; flex-direction: column; gap: 15px;">
+            <span class="body-mono">GET IN TOUCH • BRIEFING</span>
+            <h2 class="heading-medium animate-reveal-contact-h">LET'S BUILD SOMETHING EXTRAORDINARY</h2>
+            <p class="body-large">Submit your brand brief and we will coordinate our initial review within 12 hours.</p>
+          </div>
+          
+          <!-- Web3Forms Integrated Form -->
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="brief-form">
+            <!-- Web3Forms access key placeholder -->
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+            <input type="hidden" name="subject" value="New Brand Brief from Zephyro Web Studio" />
+            <input type="hidden" name="from_name" value="Zephyro Web Studio Portal" />
+            
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+            
+            <!-- Name Input -->
+            <div class="form-group">
+              <input type="text" name="name" id="form-name" class="form-input" placeholder=" " required autocomplete="off" />
+              <label for="form-name" class="form-label">YOUR NAME</label>
+            </div>
+            
+            <!-- Email Input -->
+            <div class="form-group">
+              <input type="email" name="email" id="form-email" class="form-input" placeholder=" " required autocomplete="off" />
+              <label for="form-email" class="form-label">EMAIL ADDRESS</label>
+            </div>
+            
+            <!-- Business Name Input -->
+            <div class="form-group">
+              <input type="text" name="business_name" id="form-business" class="form-input" placeholder=" " required autocomplete="off" />
+              <label for="form-business" class="form-label">BUSINESS NAME</label>
+            </div>
+            
+            <!-- Message Input -->
+            <div class="form-group">
+              <textarea name="message" id="form-message" class="form-input" rows="3" placeholder=" " required autocomplete="off"></textarea>
+              <label for="form-message" class="form-label">TELL US ABOUT YOUR PROJECT</label>
+            </div>
+            
+            <!-- Custom Styled Submit -->
+            <button type="submit" class="form-submit-btn " id="form-submit">
+              SUBMIT BRIEF
+            </button>
+          </form>
+        </div>
+        
+        <!-- Right Column: Map Widget & Info styled in premium Glassmorphism cards -->
+        <div class="contact-details-wrap" style="border-left: none; padding-left: 0; display: flex; flex-direction: column; gap: 30px;">
+          
+          <!-- Embedded Google Maps widget -->
+          <div class="map-widget-container" style="border: 1px solid var(--border-color); padding: 10px; background: rgba(13, 13, 13, 0.4); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);">
+            <iframe 
+              src="https://www.google.com/maps/place/Zephyro+Web+Development+Studio/@12.9653568,77.51614,808m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bae3d0bf7389b05:0x953f38e3cb4f63ee!8m2!3d12.9653568!4d77.51614!16s%2Fg%2F11x762ht91?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D" 
+              width="100%" 
+              height="200" 
+              style="border:0; filter: grayscale(100%) invert(90%) contrast(1.2);" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          
+          <!-- Glassmorphic Details block -->
+          <div class="info-glass-card" style="border: 1px solid var(--border-color); padding: 40px; background: rgba(13, 13, 13, 0.45); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); display: flex; flex-direction: column; gap: 30px; box-shadow: 0 8px 32px rgba(0,0,0,0.4);">
+            
+            <div class="contact-info-block">
+              <span class="info-label">PHONE NUMBER</span>
+              <a href="tel:8660538289" class="info-text">+91 8660538289 </a>
+            </div>
+            
+            <div class="contact-info-block">
+              <span class="info-label">EMAIL ADDRESS</span>
+              <a href="mailto:zephyroweb@gmail.com" class="info-text">zephyroweb@gmail.com</a>
+            </div>
+            
+            <div class="contact-info-block">
+              <span class="info-label">BUSINESS HOURS</span>
+              <span class="info-text" style="pointer-events: none;">MON - FRI / 9:00 AM - 6:00 PM IST</span>
+            </div>
+            
+            <div class="contact-info-block">
+              <span class="info-label">SOCIAL METRICS</span>
+              <div class="social-links-grid" style="grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 5px;">
+                <a href="https://www.instagram.com/zephyroweb/" class="social-pill" target="https://www.instagram.com/zephyroweb/">Instagram</a>
+                <a href="https://www.linkedin.com/in/zephyro-web-development-studio-81153b362/" class="social-pill" target="https://www.linkedin.com/in/zephyro-web-development-studio-81153b362/">LINKEDIN</a>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  
+        </main>
+        
+        <!-- Global Brand Footer -->
+        <div id="global-footer"></div>
+      </div>
+    </div>
+    
+    <!-- Main Application Script -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

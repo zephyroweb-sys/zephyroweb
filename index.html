@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Optimization -->
+    <title>Zephyro Web Studio | Premium Creative Agency</title>
+    <meta name="description" content="Crafting modern, high-performance, and immersive digital experiences. Zephyro Web Studio designs and develops state-of-the-art web products for forward-thinking brands." />
+    <meta name="keywords" content="web agency, creative studio, web design, digital experiences, premium development, GSAP animations, minimal design, black and white portfolio" />
+    <meta name="author" content="Zephyro Web Studio" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Zephyro Web Studio | Premium Creative Agency" />
+    <meta property="og:description" content="Crafting modern, high-performance, and immersive digital experiences. Zephyro Web Studio designs and develops state-of-the-art web products for forward-thinking brands." />
+    <meta property="og:type" content="website" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body data-barba="wrapper">
+    <!-- Premium Noise Overlay for Cinematic Texture -->
+    <div class="noise-overlay" id="noise-overlay"></div>
+    
+    <!-- Dynamic HTML5 Circuit Canvas Background -->
+    <canvas id="circuit-canvas" class="circuit-canvas"></canvas>
+    
+    <!-- Luxury Page Transition Overlay Screen -->
+    <div class="page-transition-overlay" id="transition-overlay"></div>
+    
+    <!-- Luxury Initial Page Preloader -->
+    <div class="page-loader" id="page-loader">
+      <div class="loader-content">
+        <div class="loader-logo-wrapper">
+          <svg class="loader-svg-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="circuit-path-loader" d="M20 20 H80 L50 50 L80 80 H20 L50 50 Z" stroke="white" stroke-width="1.5" stroke-dasharray="300" stroke-dashoffset="300" />
+            <path class="logo-z-solid" d="M25 25 H75 L25 75 H75" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.1;" />
+          </svg>
+        </div>
+        <div class="loader-text-wrapper">
+          <div class="loader-title">ZEPHYRO</div>
+          <div class="loader-subtitle">WEB STUDIO</div>
+        </div>
+        <div class="loader-bar-container">
+          <div class="loader-bar" id="loader-bar"></div>
+        </div>
+      </div>
+      <div class="loader-panels">
+        <div class="panel-left"></div>
+        <div class="panel-right"></div>
+      </div>
+    </div>
+    
+    <!-- Modern Sticky Navigation Bar -->
+    <header class="site-header" id="site-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <a href="/" class="logo-link" id="nav-logo" aria-label="Zephyro Home">
+          <div class="logo-icon-container">
+            <svg class="site-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Animated digital circuit lines -->
+              <path class="circuit-path path-1" d="M 25 25 H 75" stroke="currentColor" stroke-width="2" stroke-dasharray="100 100" />
+              <path class="circuit-path path-2" d="M 75 25 L 25 75" stroke="currentColor" stroke-width="2" stroke-dasharray="100 100" />
+              <path class="circuit-path path-3" d="M 25 75 H 75" stroke="currentColor" stroke-width="2" stroke-dasharray="100 100" />
+              <!-- Core stylized structural elements -->
+              <path class="z-line-1" d="M 25 25 H 75" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+              <path class="z-line-2" d="M 75 25 L 25 75" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+              <path class="z-line-3" d="M 25 75 H 75" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+              <!-- Circuit terminal dots -->
+              <circle cx="25" cy="25" r="3" fill="currentColor" />
+              <circle cx="75" cy="25" r="3" fill="currentColor" />
+              <circle cx="25" cy="75" r="3" fill="currentColor" />
+              <circle cx="75" cy="75" r="3" fill="currentColor" />
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">ZEPHYRO</span>
+            <span class="logo-tag">WEB STUDIO</span>
+          </div>
+        </a>
+        
+        <!-- Navigation Links -->
+        <nav class="main-nav" id="main-nav">
+          <ul class="nav-list">
+            <li><a href="/" class="nav-item active">Home</a></li>
+            <li><a href="/about.html" class="nav-item">About</a></li>
+            <li><a href="/services.html" class="nav-item">Services</a></li>
+            <li><a href="/projects.html" class="nav-item">Projects</a></li>
+            <li><a href="/process.html" class="nav-item">Process</a></li>
+            <li><a href="/pricing.html" class="nav-item">Pricing</a></li>
+            <li><a href="/contact.html" class="nav-item">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <!-- CTA Magnetic Button -->
+        <div class="nav-cta-wrapper">
+          <a href="/contact.html" class="magnetic-button" id="header-cta" data-strength="20">
+            <span class="btn-text">Let's Create</span>
+            <span class="btn-icon"><i data-lucide="arrow-up-right"></i></span>
+          </a>
+        </div>
+        
+        <!-- Mobile Menu Trigger -->
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </header>
+    
+    <!-- Full-screen Mobile Navigation Drawer -->
+    <div class="mobile-menu-drawer" id="mobile-drawer">
+      <div class="drawer-bg"></div>
+      <div class="drawer-content">
+        <ul class="mobile-nav-list">
+          <li><a href="/" class="mobile-nav-item active">Home</a></li>
+          <li><a href="/about.html" class="mobile-nav-item">About</a></li>
+          <li><a href="/services.html" class="mobile-nav-item">Services</a></li>
+          <li><a href="/projects.html" class="mobile-nav-item">Projects</a></li>
+          <li><a href="/process.html" class="mobile-nav-item">Process</a></li>
+          <li><a href="/pricing.html" class="mobile-nav-item">Pricing</a></li>
+          <li><a href="/contact.html" class="mobile-nav-item">Contact</a></li>
+        </ul>
+        <div class="drawer-footer">
+          <p class="drawer-desc">Zephyro Web Studio — Crafting digital excellence.</p>
+          <a href="mailto:hello@zephyro.studio" class="drawer-email">hello@zephyro.studio</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Shell Container for dynamic pages (Footer rendered globally inside main wrapper) -->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main class="page-container" id="app" data-barba="container" data-barba-namespace="home">
+          
+    <div id="home-page">
+      <section class="section-panel app-section active" style="min-height: 90vh; display: flex; flex-direction: column; justify-content: center;">
+        <div class="home-hero-content">
+          <!-- Status indicator -->
+          <div class="hero-subtitle-wrapper">
+            <div class="hero-dot"></div>
+            <span class="body-mono">NOW ACCEPTING PROJECTS FOR 2026 • CREATIVE STUDIO</span>
+          </div>
+          
+          <!-- Large headlines -->
+          <h1 class="heading-huge animate-reveal-home">ZEPHYRO</h1>
+          <h1 class="heading-huge outline-text animate-reveal-home">WEB STUDIO</h1>
+          
+          <!-- Modern action buttons -->
+          <div class="hero-ctas" style="display: flex; gap: 20px; margin-top: 40px; flex-wrap: wrap;">
+            <a href="/projects.html" class="magnetic-button" data-strength="18">
+              <span class="btn-text">View Projects</span>
+              <span class="btn-icon"><i data-lucide="folder-kanban"></i></span>
+            </a>
+            <a href="/contact.html" class="magnetic-button" data-strength="18" style="background-color: white; color: black; border-color: white;">
+              <span class="btn-text">Book a Consultation</span>
+              <span class="btn-icon"><i data-lucide="phone-call"></i></span>
+            </a>
+          </div>
+          
+          <!-- Premium Brand highlights -->
+          <div class="hero-footer" style="margin-top: 80px;">
+            <div class="hero-footer-col">
+              <span class="body-mono">01 / BRAND SUITES</span>
+              <p class="body-large">We engineer high-fidelity, premium digital platforms for brands looking to transcend ordinary templates.</p>
+            </div>
+            <div class="hero-footer-col">
+              <span class="body-mono">02 / MOTION METRICS</span>
+              <p class="body-large">Focusing on high-performance design, crisp staggers, and fluid user interactions.</p>
+            </div>
+            <div class="hero-footer-col">
+              <span class="body-mono">03 / CONVERSION CODES</span>
+              <p class="body-large">Developing custom, clean layouts geared to optimize engagement and accelerate visual credibility.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-panel" style="background-color: var(--bg-secondary); padding: 120px 40px;">
+        <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px;">
+          <div>
+            <span class="body-mono">ABOUT US</span>
+            <h2 class="heading-medium" style="margin-top: 20px;">WE CRAFT DIGITAL EXPERIENCES THAT DEFY THE ORDINARY.</h2>
+            <a href="/about.html" class="magnetic-button" style="margin-top: 40px;">
+              <span class="btn-text">Discover Our Studio</span>
+              <span class="btn-icon"><i data-lucide="arrow-right"></i></span>
+            </a>
+          </div>
+          <div style="display: flex; flex-direction: column; justify-content: center;">
+            <p class="body-large">Zephyro Web Studio is a premium design and development agency. We don't just build websites; we engineer high-performance conversion tools designed to elevate your brand's market perception.</p>
+            <p class="body-regular" style="margin-top: 20px;">By merging striking minimalist aesthetics with complex, fluid motion, we create unforgettable digital landscapes.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-panel" style="padding: 120px 40px;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+          <span class="body-mono">WHAT WE DO</span>
+          <h2 class="heading-medium" style="margin-top: 20px; margin-bottom: 60px;">OUR EXPERTISE</h2>
+          
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; text-align: left;">
+            <div style="padding: 40px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.02);">
+              <i data-lucide="code-xml" style="width: 32px; height: 32px;"></i>
+              <h3 class="heading-small" style="margin-top: 20px;">Web Development</h3>
+              <p class="body-regular" style="margin-top: 15px;">Fast, responsive, and tailored strictly to your operational goals.</p>
+            </div>
+            <div style="padding: 40px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.02);">
+              <i data-lucide="sparkles" style="width: 32px; height: 32px;"></i>
+              <h3 class="heading-small" style="margin-top: 20px;">Brand Identity</h3>
+              <p class="body-regular" style="margin-top: 15px;">Premium logo design and complete structural brand architecture.</p>
+            </div>
+            <div style="padding: 40px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.02);">
+              <i data-lucide="target" style="width: 32px; height: 32px;"></i>
+              <h3 class="heading-small" style="margin-top: 20px;">SEO & Conversion</h3>
+              <p class="body-regular" style="margin-top: 15px;">Targeted optimization to dominate local markets and inbound sales.</p>
+            </div>
+          </div>
+
+          <a href="/services.html" class="magnetic-button" style="margin-top: 60px; background-color: white; color: black; border-color: white;">
+            <span class="btn-text">View All Services</span>
+            <span class="btn-icon"><i data-lucide="arrow-right"></i></span>
+          </a>
+        </div>
+      </section>
+      <section class="section-panel" style="background-color: var(--bg-tertiary); padding: 120px 40px; border-top: 1px solid var(--border-color);">
+        <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+          <h2 class="heading-medium" style="margin-bottom: 30px;">READY TO DOMINATE YOUR MARKET?</h2>
+          <p class="body-large" style="color: var(--text-secondary); margin-bottom: 50px;">
+            Your website is your most valuable digital asset. Stop losing leads to competitors with outdated templates. Partner with Zephyro Web Studio to engineer a high-performance, conversion-focused platform that turns visitors into premium clients.
+          </p>
+          
+          <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+            <a href="/contact.html" class="magnetic-button" style="background-color: white; color: black; border-color: white; font-size: 16px; padding: 18px 36px;">
+              <span class="btn-text">Start Your Project Today</span>
+              <span class="btn-icon"><i data-lucide="arrow-up-right"></i></span>
+            </a>
+            <a href="/pricing.html" class="magnetic-button" style="font-size: 16px; padding: 18px 36px;">
+              <span class="btn-text">View Pricing Plans</span>
+            </a>
+          </div>
+          
+          <div style="margin-top: 60px; display: flex; justify-content: center; gap: 40px; opacity: 0.6;">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+              <i data-lucide="shield-check" style="width: 28px; height: 28px;"></i>
+              <span class="body-mono">SECURE BUILDS</span>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+              <i data-lucide="zap" style="width: 28px; height: 28px;"></i>
+              <span class="body-mono">LIGHTNING FAST</span>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+              <i data-lucide="trending-up" style="width: 28px; height: 28px;"></i>
+              <span class="body-mono">SEO OPTIMIZED</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  
+        </main>
+        
+        <!-- Global Brand Footer -->
+        <div id="global-footer"></div>
+      </div>
+    </div>
+    
+    <!-- Main Application Script -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

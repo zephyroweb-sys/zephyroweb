@@ -91,6 +91,38 @@ export function renderHome() {
           </a>
         </div>
       </section>
+
+      <!-- FAQ Section -->
+      <section class="section-panel" style="padding: 120px 40px; border-top: 1px solid var(--border-color);">
+        <div style="max-width: 800px; margin: 0 auto;">
+          <div style="text-align: center; margin-bottom: 60px;">
+            <span class="body-mono">COMMON INQUIRIES</span>
+            <h2 class="heading-medium" style="margin-top: 20px;">FREQUENTLY ASKED QUESTIONS</h2>
+          </div>
+          
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div style="padding: 30px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.02);">
+              <h3 class="heading-small" style="font-size: 20px; margin-bottom: 15px;">How long does a website project take?</h3>
+              <p class="body-regular" style="color: var(--text-secondary);">Typically, a custom web design and development project takes between 2 to 6 weeks, depending on the complexity, number of pages, and required integrations. We provide a strict timeline during our initial strategy phase.</p>
+            </div>
+            
+            <div style="padding: 30px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.02);">
+              <h3 class="heading-small" style="font-size: 20px; margin-bottom: 15px;">Do you provide SEO services?</h3>
+              <p class="body-regular" style="color: var(--text-secondary);">Yes. Every website we build includes technical SEO optimization by default. We also offer dedicated local and global SEO retention packages for aggressive market domination.</p>
+            </div>
+            
+            <div style="padding: 30px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.02);">
+              <h3 class="heading-small" style="font-size: 20px; margin-bottom: 15px;">Will I be able to update the website myself?</h3>
+              <p class="body-regular" style="color: var(--text-secondary);">Absolutely. We build upon modern, scalable Content Management Systems (CMS) with intuitive dashboards, meaning you or your team can update copy, images, and blogs without knowing how to code.</p>
+            </div>
+            
+            <div style="padding: 30px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.02);">
+              <h3 class="heading-small" style="font-size: 20px; margin-bottom: 15px;">What happens after the website is launched?</h3>
+              <p class="body-regular" style="color: var(--text-secondary);">We don't just launch and leave. All of our plans include an initial support period, and we offer scalable maintenance retainers for continuous security monitoring, updates, and performance optimization.</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section-panel" style="background-color: var(--bg-tertiary); padding: 120px 40px; border-top: 1px solid var(--border-color);">
         <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
           <h2 class="heading-medium" style="margin-bottom: 30px;">READY TO DOMINATE YOUR MARKET?</h2>

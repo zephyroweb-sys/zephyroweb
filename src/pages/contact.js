@@ -60,7 +60,7 @@ export function renderContact() {
           <!-- Embedded Google Maps widget -->
           <div class="map-widget-container" style="border: 1px solid var(--border-color); padding: 10px; background: rgba(13, 13, 13, 0.4); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.2528082184!2d-74.11976373099734!3d40.69767006327393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1716500000000!5m2!1sen!2s" 
+              src="https://maps.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" 
               width="100%" 
               height="200" 
               style="border:0; filter: grayscale(100%) invert(90%) contrast(1.2);" 
@@ -81,6 +81,14 @@ export function renderContact() {
             <div class="contact-info-block">
               <span class="info-label">EMAIL ADDRESS</span>
               <a href="mailto:hello@zephyro.studio" class="info-text">hello@zephyro.studio</a>
+            </div>
+
+            <!-- WhatsApp Direct CTA -->
+            <div class="contact-info-block">
+              <span class="info-label">WHATSAPP SECURE CHAT</span>
+              <a href="https://wa.me/18009374976" target="_blank" class="info-text" style="display: flex; align-items: center; gap: 8px;">
+                <i data-lucide="message-circle" style="width: 16px; height: 16px;"></i> Message us on WhatsApp
+              </a>
             </div>
             
             <div class="contact-info-block">

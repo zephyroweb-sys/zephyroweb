@@ -185,7 +185,7 @@
       </section>
 
       <section class="section-panel" style="background-color: var(--bg-secondary); padding: 120px 40px;">
-        <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px;">
+        <div class="home-about-grid" style="max-width: 1200px; margin: 0 auto;">
           <div>
             <span class="body-mono">ABOUT US</span>
             <h2 class="heading-medium" style="margin-top: 20px;">WE CRAFT DIGITAL EXPERIENCES THAT DEFY THE ORDINARY.</h2>
@@ -206,7 +206,7 @@
           <span class="body-mono">WHAT WE DO</span>
           <h2 class="heading-medium" style="margin-top: 20px; margin-bottom: 60px;">OUR EXPERTISE</h2>
           
-          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; text-align: left;">
+          <div class="home-expertise-grid">
             <div style="padding: 40px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.02);">
               <i data-lucide="code-xml" style="width: 32px; height: 32px;"></i>
               <h3 class="heading-small" style="margin-top: 20px;">Web Development</h3>
@@ -240,25 +240,37 @@
           </div>
           
           <div style="display: flex; flex-direction: column; gap: 20px;">
-            <div style="padding: 30px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.02);">
-              <h3 class="heading-small" style="font-size: 20px; margin-bottom: 15px;">How long does a website project take?</h3>
-              <p class="body-regular" style="color: var(--text-secondary);">Typically, a custom web design and development project takes between 2 to 6 weeks, depending on the complexity, number of pages, and required integrations. We provide a strict timeline during our initial strategy phase.</p>
-            </div>
+            <details class="faq-item">
+              <summary class="faq-summary">
+                How long does a website project take?
+                <i data-lucide="chevron-down" class="faq-icon"></i>
+              </summary>
+              <p class="body-regular faq-content">Typically, a custom web design and development project takes between 2 to 6 weeks, depending on the complexity, number of pages, and required integrations. We provide a strict timeline during our initial strategy phase.</p>
+            </details>
             
-            <div style="padding: 30px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.02);">
-              <h3 class="heading-small" style="font-size: 20px; margin-bottom: 15px;">Do you provide SEO services?</h3>
-              <p class="body-regular" style="color: var(--text-secondary);">Yes. Every website we build includes technical SEO optimization by default. We also offer dedicated local and global SEO retention packages for aggressive market domination.</p>
-            </div>
+            <details class="faq-item">
+              <summary class="faq-summary">
+                Do you provide SEO services?
+                <i data-lucide="chevron-down" class="faq-icon"></i>
+              </summary>
+              <p class="body-regular faq-content">Yes. Every website we build includes technical SEO optimization by default. We also offer dedicated local and global SEO retention packages for aggressive market domination.</p>
+            </details>
             
-            <div style="padding: 30px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.02);">
-              <h3 class="heading-small" style="font-size: 20px; margin-bottom: 15px;">Will I be able to update the website myself?</h3>
-              <p class="body-regular" style="color: var(--text-secondary);">Absolutely. We build upon modern, scalable Content Management Systems (CMS) with intuitive dashboards, meaning you or your team can update copy, images, and blogs without knowing how to code.</p>
-            </div>
+            <details class="faq-item">
+              <summary class="faq-summary">
+                What is the cost of a premium website?
+                <i data-lucide="chevron-down" class="faq-icon"></i>
+              </summary>
+              <p class="body-regular faq-content">Our premium website packages are custom-tailored to your business needs, functionality requirements, and design complexity. We provide a detailed, transparent quote after our initial discovery call.</p>
+            </details>
             
-            <div style="padding: 30px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.02);">
-              <h3 class="heading-small" style="font-size: 20px; margin-bottom: 15px;">What happens after the website is launched?</h3>
-              <p class="body-regular" style="color: var(--text-secondary);">We don't just launch and leave. All of our plans include an initial support period, and we offer scalable maintenance retainers for continuous security monitoring, updates, and performance optimization.</p>
-            </div>
+            <details class="faq-item">
+              <summary class="faq-summary">
+                What happens after the website is launched?
+                <i data-lucide="chevron-down" class="faq-icon"></i>
+              </summary>
+              <p class="body-regular faq-content">We don't just launch and leave. All of our plans include an initial support period, and we offer scalable maintenance retainers for continuous security monitoring, updates, and performance optimization.</p>
+            </details>
           </div>
         </div>
       </section>

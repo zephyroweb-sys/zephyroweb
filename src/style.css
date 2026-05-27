@@ -1405,3 +1405,90 @@ input:focus, textarea:focus, button:focus {
   border-color: var(--border-hover) !important;
 }
 
+/* Custom Added Classes */
+.faq-item {
+  padding: 30px;
+  border: 1px solid var(--border-color);
+  background: rgba(255,255,255,0.02);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.faq-item:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.faq-summary {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+}
+
+details[open] .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-content {
+  color: var(--text-secondary);
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.home-about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.home-expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: left;
+}
+
+.project-card-split {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.project-card-split:nth-child(even) {
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+.project-card-split:nth-child(even) .project-info-split {
+  grid-column: 1;
+}
+
+.project-card-split:nth-child(even) .project-img-wrapper {
+  grid-column: 2;
+}
+
+@media (max-width: 992px) {
+  .home-about-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .home-expertise-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+

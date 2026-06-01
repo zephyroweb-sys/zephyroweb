@@ -1,12 +1,13 @@
 export function renderFooter() {
   return `
-    <footer class="site-footer" id="site-footer" style="border-top: 1px solid var(--border-color); padding: 80px 40px; background-color: var(--bg-primary); z-index: 2; position: relative;">
-      <div class="footer-container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 50px;">
+    <footer class="site-footer" id="site-footer" style="border-top: 1px solid var(--border-color); padding: 80px 40px 40px; background-color: var(--bg-primary); z-index: 2; position: relative;">
+      <div class="footer-container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 60px;">
         
-        <!-- Top row: Logo tag and Tagline -->
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 40px;">
+        <!-- Top row -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
+          
+          <!-- Column 1: Brand -->
           <div style="display: flex; flex-direction: column; gap: 15px;">
-            <!-- Circuit Z Logo -->
             <div style="display: flex; align-items: center; gap: 15px;">
               <div style="width: 44px; height: 44px; color: var(--text-primary);">
                 <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
@@ -23,23 +24,54 @@ export function renderFooter() {
               </div>
             </div>
             <p class="body-mono" style="color: var(--text-muted); margin-top: 5px;">Modern websites built for growth.</p>
+            <div style="display: flex; gap: 15px; margin-top: 10px;">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'" aria-label="LinkedIn">
+                <i data-lucide="linkedin" style="width: 20px; height: 20px;"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'" aria-label="Instagram">
+                <i data-lucide="instagram" style="width: 20px; height: 20px;"></i>
+              </a>
+            </div>
           </div>
           
-          <!-- Quick Nav Links -->
+          <!-- Column 2: Navigation -->
           <div style="display: flex; flex-direction: column; gap: 15px;">
             <span class="body-mono">DIRECTORY</span>
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
-              <li><a href="#hero" class="body-regular cursor-hover" style="font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">Home</a></li>
-              <li><a href="#services" class="body-regular cursor-hover" style="font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">Services</a></li>
-              <li><a href="#about" class="body-regular cursor-hover" style="font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">About</a></li>
-              <li><a href="#projects" class="body-regular cursor-hover" style="font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">Projects</a></li>
-              <li><a href="#process" class="body-regular cursor-hover" style="font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">Process</a></li>
-              <li><a href="#contact" class="body-regular cursor-hover" style="font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">Contact</a></li>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; padding: 0;">
+              <li><a href="/" class="body-regular cursor-hover" style="font-weight: 500; color: var(--text-secondary); transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">Home</a></li>
+              <li><a href="/about.html" class="body-regular cursor-hover" style="font-weight: 500; color: var(--text-secondary); transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">About</a></li>
+              <li><a href="/services.html" class="body-regular cursor-hover" style="font-weight: 500; color: var(--text-secondary); transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">Services</a></li>
+              <li><a href="/projects.html" class="body-regular cursor-hover" style="font-weight: 500; color: var(--text-secondary); transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">Projects</a></li>
+              <li><a href="/process.html" class="body-regular cursor-hover" style="font-weight: 500; color: var(--text-secondary); transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">Process</a></li>
+              <li><a href="/pricing.html" class="body-regular cursor-hover" style="font-weight: 500; color: var(--text-secondary); transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">Pricing</a></li>
+              <li><a href="/contact.html" class="body-regular cursor-hover" style="font-weight: 500; color: var(--text-secondary); transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">Contact</a></li>
+              <li><a href="/blog/index.html" class="body-regular cursor-hover" style="font-weight: 500; color: var(--text-secondary); transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">Insights</a></li>
             </ul>
           </div>
+          
+          <!-- Column 3: Services -->
+          <div style="display: flex; flex-direction: column; gap: 15px;">
+            <span class="body-mono">SERVICES</span>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; padding: 0;">
+              <li><a href="/services/website-development.html" class="body-regular cursor-hover" style="font-weight: 500; color: var(--text-secondary); transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">Website Development</a></li>
+              <li><a href="/services/seo-services.html" class="body-regular cursor-hover" style="font-weight: 500; color: var(--text-secondary); transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">SEO Services</a></li>
+              <li><a href="/services/landing-page-development.html" class="body-regular cursor-hover" style="font-weight: 500; color: var(--text-secondary); transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">Landing Pages</a></li>
+              <li><a href="/services/logo-design.html" class="body-regular cursor-hover" style="font-weight: 500; color: var(--text-secondary); transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">Logo Design</a></li>
+              <li><a href="/services/website-redesign.html" class="body-regular cursor-hover" style="font-weight: 500; color: var(--text-secondary); transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--text-secondary)'">Website Revamps</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Local SEO -->
+          <div style="display: flex; flex-direction: column; gap: 15px;">
+            <span class="body-mono">SERVING BUSINESSES ACROSS BENGALURU</span>
+            <p class="body-regular" style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+              We proudly serve clients across Bengaluru including Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, Marathahalli, JP Nagar, Jayanagar, and Yelahanka.
+            </p>
+          </div>
+          
         </div>
         
-        <!-- Bottom Row: Copyright & Micro technical values -->
+        <!-- Bottom Row -->
         <div style="border-top: 1px solid var(--border-color); padding-top: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
           <span class="body-mono" style="font-size: 10px; color: var(--text-muted);">&copy; 2026 ZEPHYRO WEB STUDIO • ALL RIGHTS RESERVED.</span>
           <span class="body-mono" style="font-size: 10px; color: var(--text-muted); display: flex; align-items: center; gap: 5px;">

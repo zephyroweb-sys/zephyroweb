@@ -192,7 +192,7 @@ const pages = [
 ];
 
 function generateHead(p) {
-  const url = `https://zephyro.studio/${p.path.replace('index.html', '')}`;
+  const url = `https://zephyrowebstudio.in/${p.path.replace('index.html', '')}`;
   
   let schema = `
     <!-- Structured Data -->
@@ -204,7 +204,7 @@ function generateHead(p) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://zephyro.studio/"
+        "item": "https://zephyrowebstudio.in/"
       },{
         "@type": "ListItem",
         "position": 2,
@@ -241,7 +241,7 @@ function generateHead(p) {
       },
       "headline": "${p.title}",
       "description": "${p.desc}",
-      "image": "https://zephyro.studio${p.image}",  
+      "image": "https://zephyrowebstudio.in${p.image}",  
       "author": {
         "@type": "Organization",
         "name": "Zephyro Web Development Studio"
@@ -251,7 +251,7 @@ function generateHead(p) {
         "name": "Zephyro Web Development Studio",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://zephyro.studio/favicon.png"
+          "url": "https://zephyrowebstudio.in/favicon.png"
         }
       },
       "datePublished": "2026-05-01T08:00:00+08:00"

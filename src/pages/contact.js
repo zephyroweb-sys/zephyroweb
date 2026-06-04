@@ -80,7 +80,7 @@ export function renderContact() {
             
             <div class="contact-info-block">
               <span class="info-label">EMAIL ADDRESS</span>
-              <a href="mailto:hello@zephyro.studio" class="info-text">hello@zephyro.studio</a>
+              <a href="mailto:zephyroweb@gmail.com" class="info-text">zephyroweb@gmail.com</a>
             </div>
 
             <!-- WhatsApp Direct CTA -->

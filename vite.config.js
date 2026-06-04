@@ -5,7 +5,7 @@ import Sitemap from 'vite-plugin-sitemap';
 export default defineConfig({
   plugins: [
     Sitemap({
-      hostname: 'https://zephyro.studio', // replace with actual domain if different
+      hostname: 'https://zephyrowebstudio.in', // replace with actual domain if different
       dynamicRoutes: [
         '/',
         '/about.html',

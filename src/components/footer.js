@@ -63,9 +63,9 @@ export function renderFooter() {
 
           <!-- Column 4: Local SEO -->
           <div style="display: flex; flex-direction: column; gap: 15px;">
-            <span class="body-mono">SERVING BUSINESSES ACROSS BENGALURU</span>
+            <span class="body-mono">SERVING BUSINESSES IN NAGARBHAVI & BENGALURU</span>
             <p class="body-regular" style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
-              We proudly serve clients across Bengaluru including Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, Marathahalli, JP Nagar, Jayanagar, and Yelahanka.
+              We are top-rated web developers and website builders providing premium online solutions. We proudly serve clients in and around Nagarbhavi, as well as across Bengaluru including Whitefield, Electronic City, HSR Layout, Koramangala, and Indiranagar.
             </p>
           </div>
           
